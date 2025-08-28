@@ -1,21 +1,21 @@
-/** @type {import('tailwindcss').Config} */
+// tailwind.config.js
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
-        brand: "rgb(138 92 246)"
-      },
-      backgroundImage: {
-        'hero-grad': "radial-gradient(1200px 600px at 10% 10%, rgba(138,92,246,0.20), transparent 60%), radial-gradient(800px 500px at 90% 10%, rgba(56,189,248,0.15), transparent 60%)",
+        brand: "#6366F1",   // your custom brand color (purple example, change if needed)
       },
       boxShadow: {
-        soft: "0 10px 30px rgba(2,6,23,0.35)"
-      }
+        soft: "0 4px 12px rgba(0,0,0,0.08)", // soft shadow
+      },
+      backdropBlur: {
+        lg: "16px", // for your glass effect
+      },
     },
   },
   plugins: [],
-}
+};

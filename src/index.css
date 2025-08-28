@@ -4,6 +4,24 @@
 
 :root { --radius: 1.25rem; }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass {
+    @apply bg-white/10 backdrop-blur-lg border border-white/10;
+  }
+}
+
+.card {
+  @apply glass rounded-3xl p-6 shadow-soft;
+}
+
+.btn-primary {
+  @apply btn bg-brand text-white hover:scale-[1.02] active:scale-[0.98];
+}
+
 @layer base {
   html, body, #root { height: 100%; }
 }
