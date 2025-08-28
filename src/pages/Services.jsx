@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -98,12 +99,12 @@ export default function Services() {
           viewport={{ once: true }}
           className="mt-12"
         >
-          <a
-            href="/portfolio"
+          <Link
+            to="/portfolio"
             className="px-8 py-4 bg-gradient-to-r from-purple-600 to-indigo-600 rounded-xl text-lg font-semibold shadow-lg hover:scale-105 transition transform inline-block"
           >
             🚀 View My Work
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

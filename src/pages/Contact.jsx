@@ -44,10 +44,10 @@ export default function Contact() {
             <div className="card">
               <div className="text-sm text-slate-400">Phone</div>
               <a className="block mt-1 hover:text-slate-200" href="tel:+251987792401">
-                +251 987 792 401
+                +251987792401
               </a>
               <a className="block hover:text-slate-200" href="tel:+251953420346">
-                +251 953 420 346
+                +251953420346
               </a>
             </div>
             <div className="card">
@@ -65,15 +65,15 @@ export default function Contact() {
               <div className="text-sm text-slate-400">Email</div>
               <a
                 className="block mt-1 hover:text-slate-200"
-                href="mailto:you@example.com"
+                href="mailto:samuelnugus21@gmail.com"
               >
-                you@example.com
+                 samuelnugus21@gmail.com
               </a>
               <a
                 className="block hover:text-slate-200"
-                href="mailto:hello@example.com"
+                href="mailto:samuelnugusu7@gmail.com"
               >
-                hello@example.com
+                samuelnugusu7@gmail.com
               </a>
             </div>
           </div>
@@ -86,14 +86,14 @@ export default function Contact() {
           <input
             className="bg-white/5 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-white/20"
             name="name"
-            placeholder="Your name"
+            placeholder="samuel Nugusu"
             required
           />
           <input
             className="bg-white/5 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-white/20"
             name="email"
             type="email"
-            placeholder="Your email"
+            placeholder="samuelnugusu7@gmail.com"
             required
           />
           <input

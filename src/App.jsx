@@ -18,6 +18,7 @@ function App() {
       {/* Page container */}
       <div className="pt-16">
         <Routes>
+          {/* Main Routes */}
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
@@ -25,6 +26,8 @@ function App() {
           <Route path="/portfolio" element={<PortfolioTwo />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/contact" element={<Contact />} />
+
+          {/* Catch-all 404 */}
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
