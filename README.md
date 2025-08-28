@@ -1,16 +1,37 @@
-# React Portfolio Merge — Updated
+# 🌐 Personal Portfolio Website
 
-- Attractive but not too colorful (subtle gradients, glass, soft shadows).
-- New pages: **Services**, **Blog**.
-- **Contact** page mirrors the structure of your second portfolio (map + info + form with name/email/subject/message).
+A modern, responsive, and animated portfolio website built with **React, TailwindCSS, and Framer Motion** to showcase my skills, projects, and professional journey.
 
-## Run
+![Portfolio Preview](./preview.png) <!-- Optional: add a screenshot of your site -->
+
+---
+
+## 🚀 Features
+
+- ⚡ **Fast & Responsive** – Works seamlessly across all devices.  
+- 🎨 **Modern UI/UX** – Subtle gradients, glass effects, and soft shadows for a clean look.  
+- 🧩 **Modular Components** – Reusable, scalable structure.  
+- 📂 **Projects Showcase** – Highlights my best work.  
+- ✍️ **Blog Section** – Sharing ideas, insights, and learning.  
+- 💬 **Testimonials / Reviews** – Real client feedback with animations.  
+- 📞 **Contact Page** – Map + contact details + form (name, email, subject, message).  
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, TailwindCSS, Framer Motion  
+- **Routing:** React Router DOM  
+- **Hosting:** Vercel / Netlify  
+- **Version Control:** Git & GitHub  
+
+---
+
+## ⚙️ Run Locally
+
 ```bash
+# Install dependencies
 npm install
-npm run dev
-```
 
-## Customize
-- Update name, links, colors in components and pages.
-- Move sections from your two portfolios into these React pages.
-- Replace the map iframe and contact details with your own.
+# Start development server
+npm run dev

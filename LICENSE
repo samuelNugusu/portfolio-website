@@ -1,0 +1,14 @@
+
+---
+
+👉 Now you just need to:  
+
+1. Replace the conflict markers with the above content inside `README.md`.  
+2. Save file.  
+3. Run:  
+
+   ```bash
+   git add README.md
+   git commit -m "Resolve README.md conflict with merged version"
+   git branch -M main
+   git push origin main
