@@ -28,9 +28,26 @@ export default function Home() {
           modern & responsive web apps with clean design and smooth user
           experience.
         </p>
+      </motion.div>
+
+      {/* Right Side - Profile Image with Buttons + Socials */}
+      <motion.div
+        initial={{ opacity: 0, x: 50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        className="flex-1 flex flex-col items-center mt-10 md:mt-0"
+      >
+        {/* Profile Image */}
+        <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg ring-4 ring-indigo-500 ring-offset-4 ring-offset-gray-900">
+          <img
+            src="/samuel.jpg"
+            alt="Samuel Nugusu"
+            className="w-full h-full object-cover"
+          />
+        </div>
 
         {/* CTA Buttons */}
-        <div className="flex gap-4 justify-center md:justify-start">
+        <div className="flex gap-4 mt-8">
           <Link
             to="/projects"
             className="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-700 transition-all shadow-md"
@@ -46,7 +63,7 @@ export default function Home() {
         </div>
 
         {/* Social Links */}
-        <div className="flex gap-5 mt-10 justify-center md:justify-start">
+        <div className="flex gap-5 mt-8">
           {[
             { Icon: GithubIcon, url: "https://github.com/yourusername" },
             { Icon: LinkedinIcon, url: "https://linkedin.com/in/yourusername" },
@@ -64,23 +81,6 @@ export default function Home() {
               <Icon size={22} />
             </a>
           ))}
-        </div>
-      </motion.div>
-
-      {/* Right Side - Profile Image */}
-      <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-        className="flex-1 flex justify-center mt-10 md:mt-0"
-      >
-        <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg ring-4 ring-indigo-500 ring-offset-4 ring-offset-gray-900">
-          <img
-  src="/samuel.jpg"
-  alt="Samuel Nugusu"
-  className="w-full h-full object-cover"
-/>
-
         </div>
       </motion.div>
     </section>
