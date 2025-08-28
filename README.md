@@ -1,5 +1,13 @@
 # 🌐 Personal Portfolio Website  
 
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)  
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)  
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=white)  
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)  
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)  
+
+---
+
 A **modern, responsive, and animated portfolio** built with **React, TailwindCSS, and Framer Motion** — designed to showcase my skills, projects, and professional journey in a clean and engaging way.  
 
 ![Portfolio Preview](public/SamuelPage.jpg)  
@@ -43,21 +51,22 @@ npm install
 
 # Run development server
 npm run dev
+````
 
 ---
 
-## 🚀 Deployment  
+## 🚀 Deployment
 
-This portfolio is deployed on **Vercel** for fast, global access.  
+This portfolio is deployed on **Vercel** for fast, global access.
 
-👉 **Live Demo:** [https://samuelnugusu.vercel.app](https://samuelnugusu.vercel.app)  
+👉 **Live Demo:** [https://samuelnugusu.vercel.app](https://samuelnugusu.vercel.app)
 
 ---
 
-## 🤝 Contributing  
+## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!  
-Feel free to fork this repo and submit a PR.  
+Contributions, issues, and feature requests are welcome!
+Feel free to fork this repo and submit a PR.
 
 ```bash
 # Create feature branch
@@ -68,21 +77,24 @@ git commit -m 'Add amazing feature'
 
 # Push branch
 git push origin feature/amazing-feature
----
-
-## 📬 Contact  
-
-👤 **Samuel Nugusu**  
-
-- 🌐 Portfolio: [https://samuelnugusu.vercel.app](https://samuelnugusu.vercel.app)  
-- 💼 LinkedIn: [https://linkedin.com/in/samuelnugusu](https://linkedin.com/in/samuelnugusu)  
-- 🐙 GitHub: [https://github.com/samuelnugusu](https://github.com/samuelnugusu)  
-- 📧 Email: **samuel@example.com**  
+```
 
 ---
 
-## ⭐ Show Your Support  
+## 📬 Contact
 
-If you like this project, please **give it a star ⭐** — it helps others discover it and motivates me to keep improving!  
+👤 **Samuel Nugusu**
+
+* 🌐 Portfolio: [https://samuelnugusu.vercel.app](https://samuelnugusu.vercel.app)
+* 💼 LinkedIn: [https://linkedin.com/in/samuelnugusu](https://linkedin.com/in/samuelnugusu)
+* 🐙 GitHub: [https://github.com/samuelnugusu](https://github.com/samuelnugusu)
+* 📧 Email: **[samuel@example.com](mailto:samuel@example.com)**
 
 ---
+
+## ⭐ Show Your Support
+
+If you like this project, please **give it a star ⭐** — it helps others discover it and motivates me to keep improving!
+
+---
+
