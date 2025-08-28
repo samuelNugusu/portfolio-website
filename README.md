@@ -43,3 +43,46 @@ npm install
 
 # Run development server
 npm run dev
+
+---
+
+## 🚀 Deployment  
+
+This portfolio is deployed on **Vercel** for fast, global access.  
+
+👉 **Live Demo:** [https://samuelnugusu.vercel.app](https://samuelnugusu.vercel.app)  
+
+---
+
+## 🤝 Contributing  
+
+Contributions, issues, and feature requests are welcome!  
+Feel free to fork this repo and submit a PR.  
+
+```bash
+# Create feature branch
+git checkout -b feature/amazing-feature
+
+# Commit changes
+git commit -m 'Add amazing feature'
+
+# Push branch
+git push origin feature/amazing-feature
+---
+
+## 📬 Contact  
+
+👤 **Samuel Nugusu**  
+
+- 🌐 Portfolio: [https://samuelnugusu.vercel.app](https://samuelnugusu.vercel.app)  
+- 💼 LinkedIn: [https://linkedin.com/in/samuelnugusu](https://linkedin.com/in/samuelnugusu)  
+- 🐙 GitHub: [https://github.com/samuelnugusu](https://github.com/samuelnugusu)  
+- 📧 Email: **samuel@example.com**  
+
+---
+
+## ⭐ Show Your Support  
+
+If you like this project, please **give it a star ⭐** — it helps others discover it and motivates me to keep improving!  
+
+---
