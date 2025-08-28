@@ -76,10 +76,11 @@ export default function Home() {
       >
         <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg ring-4 ring-indigo-500 ring-offset-4 ring-offset-gray-900">
           <img
-            src="../images/samuel.jpg" // place your photo inside "public" folder
-            alt="Samuel Nugusu"
-            className="w-full h-full object-cover"
-          />
+  src="/samuel.jpg"
+  alt="Samuel Nugusu"
+  className="w-full h-full object-cover"
+/>
+
         </div>
       </motion.div>
     </section>
