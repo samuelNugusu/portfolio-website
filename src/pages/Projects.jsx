@@ -5,8 +5,8 @@ const projects = [
     title: "Project A",
     tags: ["React", "API"],
     demo: "https://samuel-website-old-silk.vercel.app/",
-    code: "https://github.com/yourusername/project-a", // replace with your repo
-    img: "/project-a.jpg", // ✅ make sure this exists in /public folder
+    code: "https://github.com/samuelNugusu/portfolio-website-old", // replace with your repo
+    img: "/ProjectA.jpg", // ✅ make sure this exists in /public folder
   },
   {
     title: "Project B",
