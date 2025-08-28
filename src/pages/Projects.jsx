@@ -4,29 +4,29 @@ const projects = [
   {
     title: "Project A",
     tags: ["React", "API"],
-    demo: "#",
-    code: "#",
-    img: "https://via.placeholder.com/600x400?text=Project+A",
+    demo: "https://samuel-website-old-silk.vercel.app/",
+    code: "https://github.com/yourusername/project-a", // replace with your repo
+    img: "/project-a.jpg", // ✅ make sure this exists in /public folder
   },
   {
     title: "Project B",
     tags: ["Three.js", "3D"],
     demo: "#",
-    code: "#",
+    code: "https://github.com/yourusername/project-b",
     img: "https://via.placeholder.com/600x400?text=Project+B",
   },
   {
     title: "Project C",
     tags: ["Node", "MongoDB"],
     demo: "#",
-    code: "#",
+    code: "https://github.com/yourusername/project-c",
     img: "https://via.placeholder.com/600x400?text=Project+C",
   },
   {
     title: "Project D",
     tags: ["UI/UX"],
     demo: "#",
-    code: "#",
+    code: "https://github.com/yourusername/project-d",
     img: "https://via.placeholder.com/600x400?text=Project+D",
   },
 ];
@@ -44,10 +44,14 @@ export default function Projects() {
           className="text-center mb-16"
         >
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight">
-            My <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">Projects</span>
+            My{" "}
+            <span className="bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+              Projects
+            </span>
           </h1>
           <p className="text-gray-400 mt-3 max-w-2xl mx-auto">
-            A collection of interactive, real-world projects — built to impress and engineered to perform.
+            A collection of interactive, real-world projects — built to impress
+            and engineered to perform.
           </p>
         </motion.div>
 

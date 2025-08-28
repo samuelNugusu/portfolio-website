@@ -8,62 +8,130 @@ import {
   MailIcon,
 } from "lucide-react";
 
+// Variants
+const container = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: { staggerChildren: 0.25 },
+  },
+};
+
+const wordAnim = {
+  hidden: { opacity: 0, y: 40, rotate: -5 },
+  show: {
+    opacity: 1,
+    y: 0,
+    rotate: 0,
+    transition: { duration: 0.7, ease: "easeOut" },
+  },
+};
+
+const bounceImage = {
+  animate: {
+    y: [0, -15, 0],
+    transition: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+  },
+};
+
 export default function Home() {
+  const title = "Hi, I’m Samuel Nugusu".split(" ");
+
   return (
-    <section className="min-h-screen flex flex-col md:flex-row items-center justify-center bg-gradient-to-br from-gray-900 via-black to-gray-800 text-white px-8 md:px-16">
-      
-      {/* Left Side - Text Content */}
+    <section className="relative min-h-screen flex flex-col md:flex-row items-center justify-center text-white px-6 md:px-16 overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900 via-black to-purple-900 animate-gradient" />
+
+      {/* Glow Orbs */}
+      <div className="absolute w-72 h-72 bg-indigo-600/30 rounded-full blur-3xl top-10 left-10 animate-pulse"></div>
+      <div className="absolute w-72 h-72 bg-purple-600/20 rounded-full blur-3xl bottom-10 right-10 animate-pulse"></div>
+
+      {/* Left Side - Text */}
       <motion.div
-        initial={{ opacity: 0, x: -50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-        className="flex-1 text-center md:text-left"
+        variants={container}
+        initial="hidden"
+        animate="show"
+        className="relative z-10 flex-1 text-center md:text-left"
       >
-        <h1 className="text-5xl md:text-6xl font-extrabold mb-4">
-          Hi, I’m <span className="text-indigo-500">Samuel Nugusu</span>
+        {/* Title with word animation */}
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight flex flex-wrap justify-center md:justify-start gap-2">
+          {title.map((word, i) => (
+            <motion.span
+              key={i}
+              variants={wordAnim}
+              className={word.includes("Samuel") ? "text-indigo-400" : ""}
+            >
+              {word}
+            </motion.span>
+          ))}
         </h1>
-        <p className="text-lg md:text-xl text-gray-300 mb-6 max-w-lg">
+
+        {/* Subtitle */}
+        <motion.p
+          variants={wordAnim}
+          className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 max-w-lg mx-auto md:mx-0"
+        >
           A passionate{" "}
-          <span className="text-purple-400">Full-Stack Developer</span> crafting
-          modern & responsive web apps with clean design and smooth user
-          experience.
-        </p>
+          <span className="text-purple-400 font-semibold">
+            Full-Stack Developer
+          </span>{" "}
+          crafting modern & responsive web apps with clean design and smooth
+          user experience.
+        </motion.p>
+
+        {/* CTA Buttons */}
+        <motion.div
+          variants={wordAnim}
+          className="flex gap-4 justify-center md:justify-start"
+        >
+          <Link
+            to="/projects"
+            className="relative px-6 py-3 rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 hover:opacity-90 transition-all shadow-lg overflow-hidden group"
+          >
+            <span className="relative z-10">View Projects</span>
+            <span className="absolute inset-0 bg-white/20 scale-0 group-hover:scale-150 transition-transform duration-500 rounded-full" />
+          </Link>
+
+          <Link
+            to="/contact"
+            className="px-6 py-3 rounded-lg border border-gray-400 hover:border-indigo-500 transition-all shadow-lg hover:scale-105 duration-300"
+          >
+            Contact Me
+          </Link>
+        </motion.div>
       </motion.div>
 
-      {/* Right Side - Profile Image with Buttons + Socials */}
+      {/* Right Side - Image + Socials */}
       <motion.div
-        initial={{ opacity: 0, x: 50 }}
-        animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 1 }}
-        className="flex-1 flex flex-col items-center mt-10 md:mt-0"
+        initial="hidden"
+        animate="show"
+        className="relative z-10 flex-1 flex flex-col items-center mt-12 md:mt-0"
       >
-        {/* Profile Image */}
-        <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-lg ring-4 ring-indigo-500 ring-offset-4 ring-offset-gray-900">
+        {/* Profile Image with Orbiting Glow */}
+        <motion.div
+          variants={bounceImage}
+          animate="animate"
+          className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl"
+        >
           <img
             src="/samuel.jpg"
             alt="Samuel Nugusu"
             className="w-full h-full object-cover"
           />
-        </div>
-
-        {/* CTA Buttons */}
-        <div className="flex gap-4 mt-8">
-          <Link
-            to="/projects"
-            className="px-6 py-3 rounded-lg bg-indigo-600 hover:bg-indigo-700 transition-all shadow-md"
-          >
-            View Projects
-          </Link>
-          <Link
-            to="/contact"
-            className="px-6 py-3 rounded-lg border border-gray-400 hover:border-indigo-500 transition-all"
-          >
-            Contact Me
-          </Link>
-        </div>
+          <motion.div
+            className="absolute inset-0 rounded-full border-4 border-indigo-500/60"
+            animate={{ rotate: 360 }}
+            transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
+          />
+        </motion.div>
 
         {/* Social Links */}
-        <div className="flex gap-5 mt-8">
+        <motion.div
+          variants={container}
+          initial="hidden"
+          animate="show"
+          className="flex gap-5 mt-10 flex-wrap justify-center"
+        >
           {[
             { Icon: GithubIcon, url: "https://github.com/yourusername" },
             { Icon: LinkedinIcon, url: "https://linkedin.com/in/yourusername" },
@@ -71,17 +139,19 @@ export default function Home() {
             { Icon: InstagramIcon, url: "https://instagram.com/yourusername" },
             { Icon: MailIcon, url: "mailto:youremail@example.com" },
           ].map(({ Icon, url }, i) => (
-            <a
+            <motion.a
               key={i}
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-800 hover:bg-indigo-600 transition-all duration-300 hover:scale-110 shadow-md"
+              whileHover={{ scale: 1.3, rotate: 8 }}
+              whileTap={{ scale: 0.9 }}
+              className="p-3 rounded-full bg-gray-800 hover:bg-indigo-600 transition-colors duration-300 shadow-md"
             >
               <Icon size={22} />
-            </a>
+            </motion.a>
           ))}
-        </div>
+        </motion.div>
       </motion.div>
     </section>
   );

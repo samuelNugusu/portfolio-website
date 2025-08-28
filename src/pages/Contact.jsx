@@ -31,6 +31,7 @@ export default function Contact() {
       <div className="container mx-auto max-w-6xl px-4 grid lg:grid-cols-2 gap-8 items-start">
         {/* LEFT: Map + Contact Info */}
         <div className="space-y-6">
+          {/* Map */}
           <div className="rounded-3xl overflow-hidden border border-white/10">
             <iframe
               title="map"
@@ -40,20 +41,30 @@ export default function Contact() {
             />
           </div>
 
+          {/* Contact Info */}
           <div className="grid sm:grid-cols-3 gap-4">
+            {/* Phone */}
             <div className="card">
               <div className="text-sm text-slate-400">Phone</div>
-              <a className="block mt-1 hover:text-slate-200" href="tel:+251987792401">
+              <a
+                className="block mt-1 hover:text-slate-200 break-words"
+                href="tel:+251987792401"
+              >
                 +251987792401
               </a>
-              <a className="block hover:text-slate-200" href="tel:+251953420346">
+              <a
+                className="block hover:text-slate-200 break-words"
+                href="tel:+251953420346"
+              >
                 +251953420346
               </a>
             </div>
+
+            {/* Address */}
             <div className="card">
               <div className="text-sm text-slate-400">Address</div>
               <a
-                className="block mt-1 hover:text-slate-200"
+                className="block mt-1 hover:text-slate-200 break-words"
                 href="#"
                 target="_blank"
                 rel="noreferrer"
@@ -61,16 +72,18 @@ export default function Contact() {
                 Addis Ababa, Ethiopia
               </a>
             </div>
+
+            {/* Email */}
             <div className="card">
               <div className="text-sm text-slate-400">Email</div>
               <a
-                className="block mt-1 hover:text-slate-200"
+                className="block mt-1 hover:text-slate-200 break-words"
                 href="mailto:samuelnugus21@gmail.com"
               >
-                 samuelnugus21@gmail.com
+                samuelnugus21@gmail.com
               </a>
               <a
-                className="block hover:text-slate-200"
+                className="block hover:text-slate-200 break-words"
                 href="mailto:samuelnugusu7@gmail.com"
               >
                 samuelnugusu7@gmail.com
@@ -83,17 +96,18 @@ export default function Contact() {
         <form onSubmit={submit} className="card grid gap-4">
           <h1 className="title">Contact Me</h1>
           <p className="subtitle">I’ll get back to you as soon as possible.</p>
+
           <input
             className="bg-white/5 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-white/20"
             name="name"
-            placeholder="samuel Nugusu"
+            placeholder="Your Name"
             required
           />
           <input
             className="bg-white/5 rounded-xl px-4 py-3 outline-none focus:ring-2 focus:ring-white/20"
             name="email"
             type="email"
-            placeholder="samuelnugusu7@gmail.com"
+            placeholder="Your Email"
             required
           />
           <input
