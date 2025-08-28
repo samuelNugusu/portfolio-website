@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { --radius: 1.25rem; }
+
+@layer base {
+  html, body, #root { height: 100%; }
+}
+
+@layer components {
+  .glass { @apply bg-white/10 backdrop-blur-lg border border-white/10 shadow-soft; }
+  .btn { @apply inline-flex items-center justify-center rounded-2xl px-4 py-2 font-medium transition-transform duration-200; }
+  .btn-primary { @apply btn bg-brand text-white hover:scale-[1.02] active:scale-[0.98]; }
+  .btn-ghost { @apply btn bg-white/5 hover:bg-white/10; }
+  .section { @apply py-16 md:py-24; }
+  .title { @apply text-3xl md:text-5xl font-semibold tracking-tight; }
+  .subtitle { @apply text-slate-300/90 mt-2; }
+  .card { @apply glass rounded-3xl p-6; }
+  .kicker { @apply uppercase tracking-widest text-xs text-slate-400; }
+}
