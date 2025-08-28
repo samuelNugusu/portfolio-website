@@ -2,7 +2,7 @@
 
 A modern, responsive, and animated portfolio website built with **React, TailwindCSS, and Framer Motion** to showcase my skills, projects, and professional journey.
 
-![Portfolio Preview](./preview.png) <!-- Optional: add a screenshot of your site -->
+![Portfolio Preview](./SamuelPage.jpg) <!-- Optional: add a screenshot of your site -->
 
 ---
 
