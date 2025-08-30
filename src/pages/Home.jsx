@@ -68,16 +68,88 @@ export default function Home() {
 
         {/* Subtitle */}
         <motion.p
-          variants={wordAnim}
-          className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 max-w-lg mx-auto md:mx-0"
-        >
-          A passionate{" "}
-          <span className="text-purple-400 font-semibold">
-            Full-Stack Developer
-          </span>{" "}
-          crafting modern & responsive web apps with clean design and smooth
-          user experience.
-        </motion.p>
+  initial="hidden"
+  animate="visible"
+  variants={{
+    hidden: {},
+    visible: {
+      transition: {
+        staggerChildren: 0.05,
+      },
+    },
+  }}
+  className="text-base sm:text-lg md:text-xl text-gray-300 mb-8 max-w-lg mx-auto md:mx-0 leading-relaxed"
+>
+  {[
+    "Full-Stack",
+    "Developer",
+    "passionate",
+    "about",
+    "building",
+    "fast,",
+    "scalable,",
+    "and",
+    "user-friendly",
+    "applications.",
+    "I",
+    "specialize",
+    "in",
+    "modern",
+    "frameworks",
+    "like",
+    "React,",
+    "Node.js,",
+    "Express,",
+    "MongoDB,",
+    "and",
+    "Tailwind",
+    "CSS",
+    "to",
+    "deliver",
+    "clean,",
+    "maintainable",
+    "code",
+    "that",
+    "drives",
+    "real",
+    "results.",
+    "Whether",
+    "it’s",
+    "a",
+    "landing",
+    "page",
+    "that",
+    "converts,",
+    "a",
+    "full-stack",
+    "web",
+    "app,",
+    "or",
+    "optimizing",
+    "performance,",
+    "I",
+    "focus",
+    "on",
+    "speed,",
+    "polish,",
+    "and",
+    "seamless",
+    "user",
+    "experience.",
+  ].map((word, i) => (
+    <motion.span
+      key={i}
+      variants={{
+        hidden: { opacity: 0, y: 20 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      transition={{ duration: 0.4 }}
+      className="inline-block mr-1"
+    >
+      {word}
+    </motion.span>
+  ))}
+</motion.p>
 
         {/* CTA Buttons */}
         <motion.div
