@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    title: "Project A",
+    title: "Portfolio Website",
     tags: ["React", "API"],
     demo: "https://samuel-website-old-silk.vercel.app/",
     code: "https://github.com/samuelNugusu/portfolio-website-old", // replace with your repo
