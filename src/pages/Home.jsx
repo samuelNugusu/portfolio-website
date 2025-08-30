@@ -176,11 +176,11 @@ export default function Home() {
           className="flex gap-5 mt-10 flex-wrap justify-center"
         >
           {[
-            { Icon: GithubIcon, url: "https://github.com/yourusername" },
-            { Icon: LinkedinIcon, url: "https://linkedin.com/in/yourusername" },
+            { Icon: GithubIcon, url: "https://github.com/samuelNugusu" },
+            { Icon: LinkedinIcon, url: "https://linkedin.com/in/samuelNugusu" },
             { Icon: TwitterIcon, url: "https://twitter.com/yourusername" },
             { Icon: InstagramIcon, url: "https://instagram.com/yourusername" },
-            { Icon: MailIcon, url: "mailto:youremail@example.com" },
+            { Icon: MailIcon, url: "mailto:samuelnugusu7@gmail.com" },
           ].map(({ Icon, url }, i) => (
             <motion.a
               key={i}
