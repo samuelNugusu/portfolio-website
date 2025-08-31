@@ -19,7 +19,7 @@ const projects = [
     title: "Project C",
     tags: ["Node", "MongoDB"],
     demo: "#",
-    code: "https://github.com/yourusername/project-c",
+    code: "https://github.com/samuelNugusu/Online-Job-Portal",
     img: "https://via.placeholder.com/600x400?text=Project+C",
   },
   {
