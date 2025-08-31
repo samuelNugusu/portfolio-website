@@ -9,10 +9,10 @@ const projects = [
     img: "/ProjectA.jpg", // ✅ make sure this exists in /public folder
   },
   {
-    title: "Project B",
+    title: "Online Job Portal",
     tags: ["React", "PHP","MySQL"],
     demo: "https://online-job-portal-mu.vercel.app/",
-    code: "https://github.com/yourusername/project-b",
+    code: "https://github.com/samuelNugusu/online-job-portal",
     img: "/JobPortal.jpg",
   },
   {
