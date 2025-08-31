@@ -13,7 +13,7 @@ const projects = [
     tags: ["React", "PHP","MySQL"],
     demo: "#",
     code: "https://github.com/yourusername/project-b",
-    img: "https://via.placeholder.com/600x400?text=Project+B",
+    img: "/JobPortal.jpg",
   },
   {
     title: "Project C",
