@@ -11,7 +11,7 @@ const projects = [
   {
     title: "Project B",
     tags: ["React", "PHP","MySQL"],
-    demo: "#",
+    demo: "https://online-job-portal-mu.vercel.app/",
     code: "https://github.com/yourusername/project-b",
     img: "/JobPortal.jpg",
   },
