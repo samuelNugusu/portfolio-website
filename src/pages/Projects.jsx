@@ -16,11 +16,11 @@ const projects = [
     img: "/JobPortal.jpg",
   },
   {
-    title: "Project C",
-    tags: ["Node", "MongoDB"],
+    title: "cattleFeedAI",
+    tags: ["Node", "MongoDB",JS],
     demo: "#",
-    code: "https://github.com/samuelNugusu/Online-Job-Portal",
-    img: "https://via.placeholder.com/600x400?text=Project+C",
+    code: "https://github.com/samuelNugusu/CattleFeedAI",
+    img: "/cattleFeedAI",
   },
   {
     title: "Project D",
