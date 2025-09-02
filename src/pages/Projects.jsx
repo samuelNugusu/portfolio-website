@@ -18,7 +18,7 @@ const projects = [
   {
     title: "cattleFeedAI",
     tags: ["Node", "MongoDB",JS],
-    demo: "#",
+    demo: "https://samuelnugusu.github.io/CattleFeedAI/",
     code: "https://github.com/samuelNugusu/CattleFeedAI",
     img: "/cattleFeedAI",
   },
