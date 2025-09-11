@@ -31,10 +31,9 @@ function App() {
           {/* Catch-all 404 */}
           <Route path="*" element={<NotFound />} />
         </Routes>
-
- {/* Footer shows on  pages */}
-      <Footer />
       </div>
+{/* Footer shows on  pages */}
+      <Footer />
     </>
   );
 }
