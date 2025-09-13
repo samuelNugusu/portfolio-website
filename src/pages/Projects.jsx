@@ -5,19 +5,19 @@ const projects = [
     title: "Portfolio Website",
     tags: ["React", "API"],
     demo: "https://samuel-website-old-silk.vercel.app/",
-    code: "https://github.com/samuelNugusu/portfolio-website-old", 
-    img: "/ProjectA.jpg", 
+    code: "https://github.com/samuelNugusu/portfolio-website-old",
+    img: "/ProjectA.jpg",
   },
   {
     title: "Online Job Portal",
-    tags: ["React", "PHP","MySQL"],
+    tags: ["React", "PHP", "MySQL"],
     demo: "https://online-job-portal-mu.vercel.app/",
     code: "https://github.com/samuelNugusu/online-job-portal",
     img: "/JobPortal.jpg",
   },
   {
     title: "CattleFeedAI",
-    tags: ["Node", "MongoDB","JS"],
+    tags: ["Node", "MongoDB", "JS"],
     demo: "https://samuelnugusu.github.io/CattleFeedAI/",
     code: "https://github.com/samuelNugusu/CattleFeedAI",
     img: "/CattleFeedAI.jpg",
@@ -64,7 +64,12 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ type: "spring", stiffness: 80, delay: idx * 0.15 }}
               viewport={{ once: true }}
-              whileHover={{ scale: 1.05, rotateX: 5, rotateY: -5 }}
+              whileHover={{
+                scale: 1.05,
+                rotateX: 5,
+                rotateY: -5,
+                transformPerspective: 1000,
+              }}
               className="relative group rounded-2xl overflow-hidden bg-white/5 border border-white/10 backdrop-blur-lg shadow-xl"
             >
               {/* Gradient Glow Border */}
