@@ -86,7 +86,7 @@ git push origin feature/amazing-feature
 👤 **Samuel Nugusu**
 
 * 🌐 Portfolio: [https://samuelnugusu.vercel.app](https://samuelnugusu.vercel.app)
-* 💼 LinkedIn: [https://linkedin.com/in/samuelnugusu](https://linkedin.com/in/samuelnugusu)
+* 💼 LinkedIn: [https://linkedin.com/in/samuelNugusu](https://linkedin.com/in/samuelNugusu)
 * 🐙 GitHub: [https://github.com/samuelnugusu](https://github.com/samuelnugusu)
 * 📧 Email: **[samuelnugusu7@gmail.com](mailto:samuelnugusu7@gmail.com)**
 
