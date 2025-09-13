@@ -16,7 +16,7 @@ const projects = [
     img: "/JobPortal.jpg",
   },
   {
-    title: "cattleFeedAI",
+    title: "CattleFeedAI",
     tags: ["Node", "MongoDB","JS"],
     demo: "https://samuelnugusu.github.io/CattleFeedAI/",
     code: "https://github.com/samuelNugusu/CattleFeedAI",
